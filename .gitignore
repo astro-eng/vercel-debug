@@ -90,9 +90,11 @@ sw.*
 *.swp
 
 .vercel
-.node_modules_dev
-.node_modules_prod
+node_modules_dev
+node_modules_prod
 
 .vercel
 .vercel_build_output
 .vercel_cache
+
+.vercel
