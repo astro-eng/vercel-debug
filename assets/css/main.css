@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind colors;
+
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  background: theme('colors.blackAstro');
+  color: #fff;
+  font-family: 'Noto Sans';
+}
+
+.text-gradient {
+  background: linear-gradient(
+    270deg,
+    #6f1fff -1.92%,
+    #ff00e4 47.83%,
+    #f73a3c 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-astro-1 {
+  background: linear-gradient(
+    79.48deg,
+    rgba(247, 58, 60, 0.7) 14.4%,
+    rgba(255, 0, 228, 0.7) 46.59%,
+    rgba(123, 97, 255, 0.7) 91.74%
+  );
+}
+
+.bg-astro-2 {
+  background: linear-gradient(
+    90deg,
+    rgba(247, 58, 60, 0.15) 0%,
+    rgba(255, 0, 228, 0.15) 51.01%,
+    rgba(112, 0, 255, 0.15) 100%
+  );
+}
+
+.bg-astro-3 {
+  background: linear-gradient(
+    98.15deg,
+    #fea7a7 -4.31%,
+    #8812a0 25.6%,
+    #1b184c 100%
+  );
+}
+
+.scrollbar-h-hidden::-webkit-scrollbar {
+  height: 0px; /* height of horizontal scrollbar ← You're missing this */
+}
+
+.scrollbar-v-hidden::-webkit-scrollbar {
+  width: 0px;
+}
+
+.bg-purple-gradient {
+  background: linear-gradient(270deg, #7b61ff 0%, #ff00e4 48.56%, #f73a3c 100%);
+}
+
+.card-hover:hover {
+  @apply cursor-pointer transition-transform -translate-y-[10px];
+}
